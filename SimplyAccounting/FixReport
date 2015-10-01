@@ -1,4 +1,4 @@
-Sub FixBalanceSheet()
+Sub FixReport()
   Dim r As Range
   Dim rngToChk As Range
   Dim c As Variant
@@ -6,11 +6,11 @@ Sub FixBalanceSheet()
   Dim colVals(0 To 1) As Range 'Columns where the values are (B and D)
     
   With Worksheets("Sheet1")
-    Set colTotal(0) = Range("C5:C200")
-    Set colTotal(1) = Range("E5:E200")
+    Set colTotal(0) = Range("C5:C805")
+    Set colTotal(1) = Range("E5:E805")
     
-    Set colVals(0) = Range("B5:B200")
-    Set colVals(1) = Range("D5:D200")
+    Set colVals(0) = Range("B5:B805")
+    Set colVals(1) = Range("D5:D805")
     
     For Each c In colTotal
       Set rngToChk = c
